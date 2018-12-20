@@ -22,6 +22,7 @@ mongoose
   .catch(err => console.log(err));
 
 app.use(bodyParser.json()); 
+//app.use(bodyParser.urlencoded());
 
 // Passport middleware
 app.use(passport.initialize());
