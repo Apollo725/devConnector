@@ -12,7 +12,7 @@ const app = express();
 
 
 // DB Config
-const db = require("./Config/keys").mongoURI;
+const db = require("./config/keys").mongoURI;
 
 
 // Connect to MongoDB
