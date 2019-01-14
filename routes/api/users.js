@@ -65,7 +65,7 @@ router.post("/register", (req, res) => {
   });
 });
 
-// @route GET api/users/login
+// @route POST api/users/login
 // @desc  Login User / Returning JWT Token
 // @acess Public
 router.post('/login', (req, res) => {
@@ -125,5 +125,7 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
     email:req.user.email
   });
 });
+
+
 
 module.exports = router;
